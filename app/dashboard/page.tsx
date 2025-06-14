@@ -1,22 +1,15 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import { DashboardCard } from '../components/dashboard-card';
 import { CircleDollarSign, ArrowRight } from 'lucide-react';
-
-interface TokenBalance {
-  token: string;
-  balance: string;
-}
 
 export default function Dashboard() {
   const router = useRouter();
   const adaBalance = 1000000000;
 
-  // ADA values
-  const adaAmount = Number(adaBalance) / 1_000_000; // Convert from lovelace to ADA
-  const adaPrice = 0.42; // Current ADA price in USD (example)
+  const adaAmount = Number(adaBalance) / 1_000_000;
+  const adaPrice = 0.64; // Current ADA price in USD (example)
   const adaLockedAmount = (adaAmount * 0.2).toFixed(2);
   const adaAvailableAmount = (adaAmount * 0.8).toFixed(2);
   const adaFormattedBalance = `${adaAmount.toFixed(2)} ADA`;
