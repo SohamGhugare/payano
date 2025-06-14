@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Payano
 
-## Getting Started
+Payano is a decentralized application (dApp) built for the Cardano Berlin Hackathon by NMKR. It enables users to shop online and pay later by locking their ADA as collateral—without selling it. The platform provides instant approval, flexible repayment terms, and ensures users can keep their ADA stacking while accessing liquidity.
 
-First, run the development server:
+## What is Payano?
+Payano leverages Cardano's smart contract capabilities to create a trustless, automated lending experience. Users can:
+- Lock ADA as collateral to receive instant loans for online shopping.
+- Repay loans before a deadline to reclaim their collateral.
+- Allow lenders to liquidate collateral if the loan is not repaid in time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This system is designed to be secure, transparent, and user-friendly, making decentralized finance accessible for everyday purchases.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Smart Contracts
+All smart contracts for Payano are written in [Aiken](https://aiken-lang.org). You can find the contract source code in the [`contracts/`](./contracts) folder.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was created as part of the Cardano Berlin Hackathon, which encourages innovative projects on Cardano, from AI agents and NFTs to dApps and governance systems. The hackathon provides curated APIs, libraries, and documentation to help developers build on Cardano quickly and creatively.
