@@ -17,8 +17,12 @@ export default function ConnectWallet() {
       setNetworkId(id);
       console.log(wallet);
       console.log(id);
-    } catch (e: any) {
-      setError(e?.message || 'Failed to connect');
+    } catch (e: unknown) {
+      let message = 'Failed to connect';
+      if (typeof e === 'object' && e !== null && 'message' in e && typeof (e as { message?: unknown }).message === 'string') {
+        message = (e as { message: string }).message;
+      }
+      setError(message);
       setDummyConnected(true);
     }
     setLoading(false);
