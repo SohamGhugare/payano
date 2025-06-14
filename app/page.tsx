@@ -16,7 +16,7 @@ export default function Home() {
           Payano lets you shop online using your Ada as collateral—without selling it. Get instant approval, flexible repayment terms, and keep your Ada stacking.
         </p>
         <button
-          className="mt-8 bg-[#00008B] text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#000066] transition-colors"
+          className="mt-8 bg-[#00008B] text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#000066] transition-colors cursor-pointer"
           onClick={() => router.push("/dashboard")}
         >
           Start with Payano
