@@ -1,4 +1,8 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-white flex items-center justify-center">
       <div className="text-center">
@@ -11,7 +15,10 @@ export default function Home() {
         <p className="mt-8 text-xl text-gray-600 max-w-2xl mx-auto italic">
           Payano lets you shop online using your Ada as collateral—without selling it. Get instant approval, flexible repayment terms, and keep your Ada stacking.
         </p>
-        <button className="mt-8 bg-[#00008B] text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#000066] transition-colors">
+        <button
+          className="mt-8 bg-[#00008B] text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-[#000066] transition-colors"
+          onClick={() => router.push("/dashboard")}
+        >
           Start with Payano
         </button>
       </div>
